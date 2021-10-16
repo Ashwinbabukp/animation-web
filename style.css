@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'adam' , sans-serif ;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    width: 100;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0 ; 
+}
+.logo{
+    width: 180px;
+    cursor: pointer;
+}
+.cart-logo{
+    width: 30px;
+    cursor: pointer;
+
+}
+.cart-icon{
+    width: 30px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition:width 0.3s;
+
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+.textbox{
+    
+    
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.textbox p{
+    font-family: 'Poppins' , sans-serif ;
+    font-size: 40px;
+    font-weight: 600;
+}
+.textbox h1{
+    font-family: 'Poppins' , sans-serif ;
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 20s linear infinite;
+
+
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+
+.textbox h3{
+    font-family: 'Poppins' , sans-serif ;
+    font-size: 40px;
+    font-weight: 500; 
+}
+.textbox .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.textbox a{
+    color: #fff;
+    text-decoration: none;
+    
+    padding: 10px 30px;
+    
+    margin-right: 30px;
+     
+    border: 2px solid #fff;
+}
+.social-icon{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+
+}
+.social-icon img{
+    width: 50%;
+    display: block;
+    margin: 25px 5px;
+
+
+}
